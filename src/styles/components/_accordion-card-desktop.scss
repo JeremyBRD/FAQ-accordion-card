@@ -17,25 +17,34 @@
  height: 100%;
 }
 
-#bg-pattern img {
+#bg-pattern {
+  height: 100%;
+  img {
   position: absolute;
   right: 17%;
   top: -62%;
   z-index: 1;
+  }
 }
 
-#woman-online img {
+#woman-online {
+  height: 100%;
+  img {
   position: absolute;
   width: 100%;
-  left: -7%;
-  top: 21%;
+  left: -15%;
+  top: 18%;
   z-index: 2;
+  }
 }
 
-#box img {
+#box {
+  height: 100%;
+  img {
   position: absolute;
-  width: 40%;
+  width: 34%;
   left: -20%;
-  top: 32%;
+  top: 40%;
   z-index: 3;
+  }
 }
