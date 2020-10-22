@@ -1,0 +1,41 @@
+// Main-card
+.card {
+  width: 65%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+}
+
+// Left side
+.img-and-background {
+ overflow: hidden;
+ position: relative;
+ width: 95%;
+ height: 100%;
+}
+
+#bg-pattern img {
+  position: absolute;
+  right: 17%;
+  top: -62%;
+  z-index: 1;
+}
+
+#woman-online img {
+  position: absolute;
+  width: 100%;
+  left: -7%;
+  top: 21%;
+  z-index: 2;
+}
+
+#box img {
+  position: absolute;
+  width: 40%;
+  left: -20%;
+  top: 32%;
+  z-index: 3;
+}
