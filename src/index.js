@@ -23,15 +23,15 @@ bgPattern.src = bgPatternDesktop
 const arrowDown = document.createElement('img')
 arrowDown.src = iconArrowDown
 
-const boxDiv = document.querySelector('#box')
-const womanOnlineDiv = document.querySelector('#woman-online')
-const bgPatternDiv = document.querySelector('#bg-pattern')
-const arrowDownDiv = document.querySelector('.arrow-down')
-
-boxDiv.append(box)
-womanOnlineDiv.append(womanOnline)
-bgPatternDiv.append(bgPattern)
-arrowDownDiv.append(arrowDown)
+const boxDiv = document.getElementById('box')
+const womanOnlineDiv = document.getElementById('woman-online')
+const bgPatternDiv = document.getElementById('bg-pattern')
+const arrowDownDiv = document.querySelectorAll('.arrow-down')
+console.log(arrowDownDiv);
+boxDiv.append(box);
+womanOnlineDiv.append(womanOnline);
+bgPatternDiv.append(bgPattern);
+arrowDownDiv.forEach(arrowDiv => arrowDiv.append(arrowDown));
 
 // Init JS Functions
 example();
