@@ -1,7 +1,7 @@
 // Main-card
 .card {
   width: 65%;
-  height: 65%;
+  height: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,3 +59,9 @@
   width: 105%;
   padding: 0px 25px;
 }
+
+.accordion-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+

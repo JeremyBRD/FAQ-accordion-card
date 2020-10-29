@@ -20,18 +20,20 @@ womanOnline.src = illustrationWomanOnlineDesktop
 const bgPattern = document.createElement('img')
 bgPattern.src = bgPatternDesktop
 
-const arrowDown = document.createElement('img')
-arrowDown.src = iconArrowDown
-
 const boxDiv = document.getElementById('box')
 const womanOnlineDiv = document.getElementById('woman-online')
 const bgPatternDiv = document.getElementById('bg-pattern')
-const arrowDownDiv = document.querySelectorAll('.arrow-down')
-console.log(arrowDownDiv);
 boxDiv.append(box);
 womanOnlineDiv.append(womanOnline);
 bgPatternDiv.append(bgPattern);
-arrowDownDiv.forEach(arrowDiv => arrowDiv.append(arrowDown));
+
+const divs = document.querySelectorAll('.arrow-down'); 
+console.log(divs);
+divs.forEach(div => {
+  const iconImg = document.createElement('img');
+  iconImg.src = iconArrowDown;
+  div.append(iconImg);
+});
 
 // Init JS Functions
 example();
