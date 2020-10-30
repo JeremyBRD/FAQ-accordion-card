@@ -9,6 +9,10 @@
   border-radius: 20px;
 }
 
+h1 {
+  padding-left: 35%;
+}
+
 // Left side
 .img-and-background {
  overflow: hidden;
@@ -62,7 +66,7 @@
 
 .accordion {
   width: 90%;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .accordion-item {
@@ -95,7 +99,3 @@
   line-height: 1rem;
   transition: max-height .3s ease-out;
 }
-
-// .accordion-item-body-content {
-
-// }
