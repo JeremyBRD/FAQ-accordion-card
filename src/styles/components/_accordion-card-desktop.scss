@@ -73,18 +73,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
+  // padding: 0.5rem 1rem 0.5rem 1rem;
+  min-height: 1.5rem;
+  line-height: 1rem;
   font-weight: bold;
   position: relative;
   cursor: pointer;
 }
 
-.active {
+.arrow-down {
   transition: transform .3s;
 }
 
 .arrow-down.active {
   transform: rotate(180deg);
 }
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  line-height: 1rem;
+  transition: max-height .3s ease-out;
+}
+
+// .accordion-item-body-content {
+
+// }
