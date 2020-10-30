@@ -1,5 +1,5 @@
 // Test import of a JavaScript function
-import {example} from './js/example'
+import { toggleActive } from './js/accordion.js'
 
 // Import of styles
 import './styles/index.scss'
@@ -10,7 +10,7 @@ import illustrationWomanOnlineDesktop from './images/illustration-woman-online-d
 import bgPatternDesktop from './images/bg-pattern-desktop.svg'
 import iconArrowDown from './images/icon-arrow-down.svg'
 
-// Appending to the DOM
+// Appending images to the DOM
 const box = document.createElement('img')
 box.src = illustrationBoxDesktop
 
@@ -28,7 +28,6 @@ womanOnlineDiv.append(womanOnline);
 bgPatternDiv.append(bgPattern);
 
 const divs = document.querySelectorAll('.arrow-down'); 
-console.log(divs);
 divs.forEach(div => {
   const iconImg = document.createElement('img');
   iconImg.src = iconArrowDown;
@@ -36,4 +35,4 @@ divs.forEach(div => {
 });
 
 // Init JS Functions
-example();
+toggleActive();
