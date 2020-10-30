@@ -79,7 +79,10 @@
   font-weight: bold;
   position: relative;
   cursor: pointer;
-  transition: rotate 1s;
+}
+
+.active {
+  transition: transform .3s;
 }
 
 .arrow-down.active {
